@@ -5,6 +5,8 @@
     scroll-behavior: smooth;
 }
 
+/* NAVIGATION */
+
 nav {
     height: 10vh;
     background-color: rgb(255, 255, 255);
@@ -12,13 +14,13 @@ nav {
     justify-content: space-between;
     line-height: 10vh;
     width: 100%;
+    vertical-align: middle;
 }
 
 nav .title {
-    width: 50%;
+    width: 40%;
     text-align: left;
     padding-left: 3%;
-    padding-right: 57%;
 }
 
 nav .title a {
@@ -29,7 +31,7 @@ nav .title a {
 }
 
 nav .links {
-    width: 50%;
+    width: 60%;
     text-align: right;
     padding-right: 50px;
 }
@@ -52,6 +54,76 @@ nav .links a:hover {
     border-bottom: 2px solid #A41034;
 }
 
+/* MOBILE NAVIGATION */
+.burger {
+    height: 30px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+    z-index: 15;
+}
+
+.active .one {
+    transform: rotate(45deg) translateY(17px);
+}
+.active .two {
+    opacity: 0;
+}
+.active .three {
+    transform: rotate(-45deg) translateY(-17px);
+}
+
+.burger span {
+    width: 100%;
+    height: 6px;
+    background-color: #A41034;
+    transition: 0.5s all ease-out;
+}
+
+.mobilemenu {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -100vh;
+    transition: all 0.5s ease-out;
+    text-align: center;
+    padding-top: 5vh;
+}
+
+.mobilemenu .title a {
+    font-family: 'Merriweather', serif;
+    text-decoration: none;
+    color: #A41034;
+    font-size: 3rem;
+}
+
+.mobilemenu ul {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: space-around;
+    font-size: 2.5rem;
+}
+
+.mobilemenu ul a {
+    text-decoration: none;
+    color: #A41034;
+    font-family: 'Lato', sans-serif;
+}
+
+.mobilemenu.active {
+    margin-top: 0;
+}
+
+/* LANDING PAGE */
 .picbg {
     height: 90vh;
     width: 100%;
@@ -109,6 +181,7 @@ h1 {
 .about {
     font-family: 'Lato', sans-serif;
     display: flex;
+    flex-wrap: wrap;
     scroll-margin-top: 75px;
     padding: 10px 65px;
 }
@@ -172,6 +245,13 @@ hr {
     padding: 18px 25px;
     box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.4);
     margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tile div {
+    margin: 5px 0px;
 }
 
 .tilehead {
@@ -192,7 +272,8 @@ hr {
 }
 
 .tiletags {
-    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .tiletags ul {
@@ -202,6 +283,21 @@ hr {
     flex-wrap: wrap;
     font-family: 'Lato', sans-serif;
     font-size: 0.8rem;
+}
+
+.tiletags div {
+    display: flex; 
+    line-height: 10px;
+}
+
+.tiletags h5 {
+    font-family: 'Merriweather', serif;
+    font-size: 0.9rem; 
+    margin-right: 5px;
+}
+
+.tiletags p {
+    font-family: 'Lato', sans-serif;
 }
 
 h4 {
@@ -215,7 +311,6 @@ h4 {
     text-align: center;
     line-height: 23px;
     margin-right: 5px;
-    background-color: rgb(188, 188, 255);
 }
 
 .timeline {
@@ -227,4 +322,52 @@ h4 {
 .timeline p {
     margin-left: 6px;
     font-family: 'Lato', sans-serif;
+}
+
+
+/* TAG COLORS */
+.money {
+    background-color: rgb(121, 243, 121);
+}
+
+.time {
+    background-color: rgb(255, 207, 117);
+}
+.type {
+    background-color: rgb(168, 168, 255)
+}
+
+/* RESPONSIVENESS */
+@media only screen and (max-width: 800px) {
+    .burger {
+        display: flex;
+    }
+    nav .links {
+        display: none;
+    }
+    .landingtext {
+        padding: 45px;
+        padding-top: 20vh;
+    }
+    .header {
+        text-align: center;
+        margin: 15px 0px 0px 0px;
+    }
+    .about {
+        padding: 25px;
+    }
+    .about p {
+        padding: 0;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .profiles div {
+        width: 100%;
+    }
+} 
+
+@media only screen and (min-width: 800px) {
+    .mobilemenu {
+        margin-top: -100vh;
+    }
 }
