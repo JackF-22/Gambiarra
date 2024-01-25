@@ -10,8 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">  
 </head>
-<body>
+<body class="scholbody">
     <nav>
         <div class="title">
             <h1 style="cursor: pointer;"><a href="index.html">Gambiarra</a></h1>
@@ -44,57 +45,147 @@
     <!--List of all scholarships-->
     <div class="scholarships">
         <!--Singular scholarship "tile"-->
-        <div class="tile">
-            <!--Will have title and link at the top-->
-            <div class="tilehead">
-                <h3>Gates Scholarship</h3> 
-                <a href="https://www.thegatesscholarship.org/scholarship">https://www.thegatesscholarship.org/scholarship</a>
-            </div>
-            <div class="timeline">
-                <h4>Open:</h4> <p>July 15th</p> <h4 style="margin-left: 15px;">Close:</h4><p>September 15th</p>
-            </div>
-            <div class="tilereqs">
-                <h4>Requirements</h4>
-                <ul>
-                    <li>3.3 Minimum GPA</li>
-                    <li>US Citizen</li>
-                </ul>
-            </div>
-            <div class="tiletags">
-                <ul>
-                    <li class="money">Low-Income</li>
-                    <li class="time">Junior Summer</li>
-                    <li class="type">Network</li>
-                </ul>
-                <div>
-                    <h5>Amount: </h5> <p>Full-Ride</p>
+        <div class="tile" id="gates">
+            <div class="info">
+                <a href="https://www.thegatesscholarship.org/scholarship">The Gates Scholarship</a>
+                <p>The Gates Scholarship (TGS) is a highly selective, last-dollar scholarship for outstanding, minority, high school seniors from low-income households.</p>
+                <div class="specifics">
+                    <div>
+                        <h1>Open: </h1>
+                        <h2>July 15th</h2>
+                    </div>
+                    <div>
+                        <h1>Close: </h1>
+                        <h2>Semptember 15th</h2>
+                    </div>
+                    <div>
+                        <h1>Award: </h1>
+                        <h2>Full Ride</h2>
+                    </div>
+                </div><br>
+                <div class="tags">
+                    <span class="tag money">Low-Income</span>
+                    <span class="tag time">Junior Summer</span>
+                    <span class="tag ethnicity">Ethnicity-Based</span>
+                    <span class="tag type">Network</span>
                 </div>
+            </div>
+            <div class="extrainfo">
+                <h2>Requirements</h2>
+                <ul>
+                    <li>US Citizen</li>
+                    <li>Minimum 3.3 GPA</li>
+                </ul>
+                <br><br>
+                <span class="tag deadline">Closes in 9 Months</span>
             </div>
         </div>
-        <div class="tile">
-            <div class="tilehead">
-                <h3>Questbridge College Prep Scholars</h3> 
-                <a href="https://www.questbridge.org/high-school-students/college-prep-scholars">https://www.questbridge.org/high-school-students/college-prep-scholars</a>
+
+        <div class="tile" id="prepschol">
+            <div class="info">
+                <a href="https://www.questbridge.org/high-school-students/college-prep-scholars">Questbridge College Prep Scholars</a>
+                <p>The Gates Scholarship (TGS) is a highly selective, last-dollar scholarship for outstanding, minority, high school seniors from low-income households.</p>
+                <div class="specifics">
+                    <div>
+                        <h1>Open: </h1>
+                        <h2>February</h2>
+                    </div>
+                    <div>
+                        <h1>Close: </h1>
+                        <h2>March</h2>
+                    </div>
+                    <div>
+                        <h1>Award: </h1>
+                        <h2>Full Ride</h2>
+                    </div>
+                </div><br>
+                <div class="tags">
+                    <span class="tag money">Low-Income</span>
+                    <span class="tag time">Junior Summer</span>
+                    <span class="tag ethnicity">Ethnicity-Based</span>
+                    <span class="tag type">Network</span>
+                    <span class="tag type">Application Assistance</span>
+                </div>
             </div>
-            <div class="timeline">
-                <h4>Open:</h4> <p>February</p> <h4 style="margin-left: 15px;">Close:</h4><p>March</p>
-            </div>
-            <div class="tilereqs">
-                <h4>Requirements</h4>
+            <div class="extrainfo">
+                <h2>Requirements</h2>
                 <ul>
-                    <li>3.3 Minimum GPA</li>
+                    <li>US Citizen</li>
+                    <li>Average 3.94 GPA</li>
+                </ul>
+                <br><br>
+                <span class="tag deadline">Closes in 2 Months</span>
+            </div>
+        </div>
+
+        <div class="tile" id="colmatch">
+            <div class="info">
+                <a href="https://www.questbridge.org/high-school-students/national-college-match">Questbridge National College Match</a>
+                <p>The QuestBridge National College Match can be your pathway to a top college. Through this college and scholarship application process, you can apply for free to the nation’s best colleges and be considered for early admission and a full four-year scholarship.</p>
+                <div class="specifics">
+                    <div>
+                        <h1>Open: </h1>
+                        <h2>Early August</h2>
+                    </div>
+                    <div>
+                        <h1>Close: </h1>
+                        <h2>September 26th</h2>
+                    </div>
+                    <div>
+                        <h1>Award: </h1>
+                        <h2>Full Ride</h2>
+                    </div>
+                </div><br>
+                <div class="tags">
+                    <span class="tag money">Low-Income</span>
+                    <span class="tag time">Junior Summer</span>
+                    <span class="tag ethnicity">Ethnicity-Based</span>
+                    <span class="tag type">Network</span>
+                </div>
+            </div>
+            <div class="extrainfo">
+                <h2>Requirements</h2>
+                <ul>
                     <li>US Citizen</li>
                 </ul>
+                <br><br>
+                <span class="tag deadline">Closes in 9 Months</span>
             </div>
-            <div class="tiletags">
-                <ul>
-                    <li class="money">Low-Income</li>
-                    <li class="time">Junior Year</li>
-                    <li class="type">Network</li>
-                </ul>
-                <div>
-                    <h5>Amount: </h5> <p>Full-Ride</p>
+        </div>
+
+        <div class="tile" id="uconnpride">
+            <div class="info">
+                <a href="https://admissions.uconn.edu/dop-applicants/">UConn Day of Pride Scholarship</a>
+                <p>The QuestBridge National College Match can be your pathway to a top college. Through this college and scholarship application process, you can apply for free to the nation’s best colleges and be considered for early admission and a full four-year scholarship.</p>
+                <div class="specifics">
+                    <div>
+                        <h1>Open: </h1>
+                        <h2>Early August</h2>
+                    </div>
+                    <div>
+                        <h1>Close: </h1>
+                        <h2>September 26th</h2>
+                    </div>
+                    <div>
+                        <h1>Award: </h1>
+                        <h2>Full Ride</h2>
+                    </div>
+                </div><br>
+                <div class="tags">
+                    <span class="tag money">Low-Income</span>
+                    <span class="tag time">Junior Summer</span>
+                    <span class="tag type">Network</span>
                 </div>
+            </div>
+            <div class="extrainfo">
+                <h2>Requirements</h2>
+                <ul>
+                    <li>US Citizen</li>
+                    <li>Minimum 1170 SAT or 24 ACT</li>
+                    <li>Minimum 3.6 GPA</li>
+                </ul>
+                <br><br>
+                <span class="tag deadline">Closes in 9 Months</span>
             </div>
         </div>
     </div>

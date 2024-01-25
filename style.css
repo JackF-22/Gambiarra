@@ -231,101 +231,86 @@ hr {
 
 
 /* SCHOLARSHIPS */
-.scholarships {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.scholbody {
+    background-color: rgb(233, 233, 233);
+}
+
+.filter {
+    width: 15%;
+    height: 100vh;
+}
+
+.scholarshipcontainer {
+    width: 100%;
+    background-color: rgb(246, 246, 246);
 }
 
 .tile {
-    width: 550px;
-    border-radius: 25px;
-    padding: 18px 25px;
-    box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.4);
-    margin-top: 25px;
+    width: 95%;
+    background-color: white;
+    border-radius: 5px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    padding: 25px;
+    padding-right: 0px;
+    position: relative;
+    margin: 15px auto;
 }
 
-.tile div {
-    margin: 5px 0px;
+.info {
+    width: 100%;
+    padding-right: 25px;
 }
 
-.tilehead {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    font-family: 'Merriweather', serif;
-    font-size: 0.9rem;
-}
-
-.tilereqs ul {
-    margin-left: 25px;
+.info p {
     font-family: 'Lato', sans-serif;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
 }
 
-.tilereqs ul li {
-    margin: 5px;
+.tags h1 {
+    font-size: 1.4rem;
 }
 
-.tiletags {
+a {
+    color: #A41034;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.specifics {
+    margin-top: 15px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
 }
 
-.tiletags ul {
-    list-style-type: none;
+.specifics div {
     display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
-    font-family: 'Lato', sans-serif;
-    font-size: 0.8rem;
+    margin: 0px 20px 0px 0px;
 }
 
-.tiletags div {
-    display: flex; 
-    line-height: 10px;
-}
-
-.tiletags h5 {
-    font-family: 'Merriweather', serif;
-    font-size: 0.9rem; 
-    margin-right: 5px;
-}
-
-.tiletags p {
-    font-family: 'Lato', sans-serif;
-}
-
-h4 {
-    font-family: 'Merriweather', serif;
-}
-
-.tiletags li {
-    width: 100px;
-    height: 25px;
-    border-radius: 15px;
-    text-align: center;
-    line-height: 23px;
-    margin-right: 5px;
-}
-
-.timeline {
-    display: flex;
-    flex-wrap: wrap;
-    font-family: 'Merriweather', serif;
+.specifics h1 {
     font-size: 1rem;
-}
-.timeline p {
-    margin-left: 6px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    margin: 2px;
 }
 
+.specifics h2 {
+    font-size: 1rem;
+    color: rgb(71, 71, 71);
+    font-family: 'Oswald', sans-serif;
+    margin: 2px;
+}
 
-/* TAG COLORS */
+.tags span {
+    border-radius: 5px;
+    margin: auto;
+    padding: 10px;
+    font-size: 0.8rem;
+    margin-right: 8px;
+}
+
 .money {
     background-color: rgb(121, 243, 121);
 }
@@ -335,6 +320,77 @@ h4 {
 }
 .type {
     background-color: rgb(168, 168, 255)
+}
+.ethnicity {
+    background-color: rgb(255, 142, 142);
+}
+
+.filter {
+    text-align: left;
+    padding: 20px 10px;
+}
+
+.filter h1 {
+    font-family: 'Oswald', sans-serif;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+.filter h3 {
+    font-family: 'Merriweather', serif;
+    margin: 15px;
+    font-size: 1.4rem;
+    color: rgb(45, 45, 45);
+}
+
+.filter div {
+    margin: 0 auto;
+    text-align: left;
+    line-height: 25px;
+    margin-bottom: 40px;
+    padding-left: 25px;
+}
+
+.filter label {
+    margin: 8px;
+    font-size: 1.1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.extrainfo {
+    padding: 0xp 0px 25px 25px;
+    width: 30%;
+    border-left: 1px solid gray;
+    text-align: center;
+    position: relative;
+}
+
+.extrainfo h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.extrainfo ul {
+    list-style-type: none;
+    font-family: 'Lato', sans-serif;
+}
+
+.extrainfo li {
+    margin-top: 5%;
+}
+
+.deadline {
+    width: 70%;
+    background-color: rgb(204, 255, 204);
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0px 1px 2px 0px rgb(0, 0, 0, 0.3);
+    color: rgb(50, 50, 50);
+    position: absolute;
+    bottom: 10px;
+    transform: translateX(-50%);
 }
 
 /* RESPONSIVENESS */
