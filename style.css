@@ -250,7 +250,8 @@ hr {
     background-color: white;
     border-radius: 5px;
     display: flex;
-    padding: 25px;
+    flex-direction: row;
+    padding: 25px 25px 5px 25px;
     padding-right: 0px;
     position: relative;
     margin: 15px auto;
@@ -271,13 +272,20 @@ hr {
     margin-top: 10px;
 }
 
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 100%;
+}
+
 .tags h1 {
     font-size: 1.4rem;
 }
 
 a {
     color: #A41034;
-    text-decoration: none;
+    text-decoration: underline;
     font-size: 2rem;
     font-family: 'Oswald', sans-serif;
 }
@@ -308,10 +316,10 @@ a {
 
 .tags span {
     border-radius: 5px;
-    margin: auto;
     padding: 10px;
     font-size: 0.8rem;
     margin-right: 8px;
+    margin-bottom: 10px;
 }
 
 .money {
@@ -370,6 +378,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 10px;
 }
 
 .extrainfo h2 {
@@ -397,6 +406,33 @@ a {
 }
 
 /* RESPONSIVENESS */
+@media only screen and (max-width: 1000px) {
+    .tile {
+        flex-direction: column;
+    }
+    .extrainfo {
+        padding-top: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        border: none;
+        line-height: 25px;
+        align-items: middle;
+    }
+    .extrainfo h2 {
+        margin-right: 10px;
+    }
+    .extrainfo li {
+        display: inline-block;
+        margin-right: 15px;
+        margin-top: 0;
+    }
+    .deadline {
+        width: 30%;
+        margin: 0px 15px;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .burger {
         display: flex;
